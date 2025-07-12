@@ -9,8 +9,8 @@ public class Main{
     public static void main(String[] args){
         // System.out.println("Hello World");
 
-        Car myCar = new Car(25.5, "DL2345", Color.BLUE, true);
-        Car anotherCar = new Car(30.5, "UP2728", Color.RED, false);
+        // Car myCar = new Car(25.5, "DL2345", Color.BLUE, true);
+        // Car anotherCar = new Car(30.5, "UP2728", Color.RED, false);
 
         // System.out.println("My car's License Plate: " + myCar.licensePlate);
         // System.out.print("Another Car's License Plate: " + anotherCar.licensePlate);
