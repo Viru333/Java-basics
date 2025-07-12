@@ -88,17 +88,25 @@ public class Main{
         // }
         // else System.out.println("Invalid");
 
-        double power = Math.pow(5, 3);
-        System.out.println(power);
+        // double power = Math.pow(5, 3);
+        // System.out.println(power);
 
-        double squareRoot = Math.sqrt(64);
-        System.out.println(squareRoot);
+        // double squareRoot = Math.sqrt(64);
+        // System.out.println(squareRoot);
 
-        Random rand = new Random();
-        int randomNumber = rand.nextInt();
-        int randomNumberWithBound = rand.nextInt(10);
+        // Random rand = new Random();
+        // int randomNumber = rand.nextInt();
+        // int randomNumberWithBound = rand.nextInt(10);
 
-        System.out.println(randomNumber);
-        System.out.println(randomNumberWithBound);
+        // System.out.println(randomNumber);
+        // System.out.println(randomNumberWithBound);
+
+        Coin c = new Coin();
+        System.out.println("Initial: "+ c.getFaceUp());
+
+        for(int i=0;i<10;i++){
+            c.flip();
+            System.out.println("After Flip: "+ c.getFaceUp());
+        }
     }
 }
