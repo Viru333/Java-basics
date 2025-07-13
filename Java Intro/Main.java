@@ -150,26 +150,39 @@ public class Main{
         //     System.out.println("Spider is an insect and a spider");
         // }
 
-        Dog d = new Dog();
-        Cat c = new Cat();
+        // Dog d = new Dog();
+        // Cat c = new Cat();
 
-        if(c instanceof Pet) {
-            c.play();
-        }
+        // if(c instanceof Pet) {
+        //     c.play();
+        // }
 
-        if(d instanceof Pet) {
-            d.play();
-        }
+        // if(d instanceof Pet) {
+        //     d.play();
+        // }
 
-        Pet p;
-        Random rand = new Random();
-        int n = rand.nextInt(2);
-        if(n == 0) {
-            p = new Dog();
-        } else {
-            p = new Cat();
-        }
+        // Pet p;
+        // Random rand = new Random();
+        // int n = rand.nextInt(2);
+        // if(n == 0) {
+        //     p = new Dog();
+        // } else {
+        //     p = new Cat();
+        // }
 
-        p.play(); // interfaces when used, they foree classes and objects to have certain properties without forcing their implementation.
+        // p.play(); // interfaces when used, they foree classes and objects to have certain properties without forcing their implementation.
+
+        //*************************************************lambda*************************************************
+        //anonymous functions, created in java without usual code overhead.
+        // great tool for quick function for a calculation in code
+        // usually have a single purpose and doesnt affect other objects in code
+        
+        Answerable phone = () -> "Hello";
+        System.out.println(phone.answer());
+        Predicate isOdd = n -> n%2 != 0;
+        System.out.println(isOdd.test(2));
+
+        Predicate isEven = n -> n%2 == 0;
+        System.out.println(isEven.test(2));
     }
 }
