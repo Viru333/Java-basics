@@ -132,22 +132,44 @@ public class Main{
         // myBankAccount.deposit(100);
         // myBankAccount.withdraw(200);
 
-        Insect insect = new Insect(5, 6);
-        Spider spider = new Spider(13, true);
-        Cricket cricket = new Cricket(2, 1.25);
+        // Insect insect = new Insect(5, 6);
+        // Spider spider = new Spider(13, true);
+        // Cricket cricket = new Cricket(2, 1.25);
 
-        insect.crawl();
-        insect.says();
+        // insect.crawl();
+        // insect.says();
 
-        spider.crawl();
-        spider.says();
+        // spider.crawl();
+        // spider.says();
 
-        cricket.crawl();
-        cricket.says();
-        cricket.jump();
+        // cricket.crawl();
+        // cricket.says();
+        // cricket.jump();
 
-        if(spider instanceof Insect && spider instanceof Spider) {
-            System.out.println("Spider is an insect and a spider");
+        // if(spider instanceof Insect && spider instanceof Spider) {
+        //     System.out.println("Spider is an insect and a spider");
+        // }
+
+        Dog d = new Dog();
+        Cat c = new Cat();
+
+        if(c instanceof Pet) {
+            c.play();
         }
+
+        if(d instanceof Pet) {
+            d.play();
+        }
+
+        Pet p;
+        Random rand = new Random();
+        int n = rand.nextInt(2);
+        if(n == 0) {
+            p = new Dog();
+        } else {
+            p = new Cat();
+        }
+
+        p.play(); // interfaces when used, they foree classes and objects to have certain properties without forcing their implementation.
     }
 }
