@@ -20,7 +20,7 @@ public class Main{
         // myCar.changePaintColor(Color.red);
         // System.out.println(myCar.paintColor.toString());
         
-        // Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // String userInput = sc.next();
         // String upperCase = userInput.toUpperCase();
@@ -70,7 +70,6 @@ public class Main{
         // System.out.println(playerCurrentHealth);
 
         // System.out.println("Enter an age: ");
-        // Scanner sc = new Scanner(System.in);
 
         // int age =  sc.nextInt();
 
@@ -101,12 +100,36 @@ public class Main{
         // System.out.println(randomNumber);
         // System.out.println(randomNumberWithBound);
 
-        Coin c = new Coin();
-        System.out.println("Initial: "+ c.getFaceUp());
+        // Coin c = new Coin();
+        // System.out.println("Initial: "+ c.getFaceUp());
 
-        for(int i=0;i<10;i++){
-            c.flip();
-            System.out.println("After Flip: "+ c.getFaceUp());
-        }
+        // for(int i=0;i<10;i++){
+        //     c.flip();
+        //     System.out.println("After Flip: "+ c.getFaceUp());
+        // }
+
+        // DIce Roll Program
+
+        // Dice d = new Dice();
+        
+        // int userInput;
+        // do{
+        //     System.out.println("Enter Input 0 or 1: ");
+        //     userInput = sc.nextInt();
+
+        //     if(userInput == 1){
+        //         d.rollDice();
+        //         System.out.println("After rolling: " + d.getFaceUp());
+        //     }
+        // }while(userInput != 0);
+
+        BankAccount myBankAccount = new BankAccount(0000, 100);
+        // System.out.println(myBankAccount.account_number);
+
+        myBankAccount.deposit(-60);
+        myBankAccount.withdraw(150);
+
+        myBankAccount.deposit(100);
+        myBankAccount.withdraw(200);
     }
 }
