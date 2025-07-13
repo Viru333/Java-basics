@@ -123,13 +123,27 @@ public class Main{
         //     }
         // }while(userInput != 0);
 
-        BankAccount myBankAccount = new BankAccount(0000, 100);
+        // BankAccount myBankAccount = new BankAccount(0000, 100);
         // System.out.println(myBankAccount.account_number);
 
-        myBankAccount.deposit(-60);
-        myBankAccount.withdraw(150);
+        // myBankAccount.deposit(-60);
+        // myBankAccount.withdraw(150);
 
-        myBankAccount.deposit(100);
-        myBankAccount.withdraw(200);
+        // myBankAccount.deposit(100);
+        // myBankAccount.withdraw(200);
+
+        Insect insect = new Insect(5, 6);
+        Spider spider = new Spider(13, true);
+        Cricket cricket = new Cricket(2, 1.25);
+
+        insect.crawl();
+        insect.says();
+
+        spider.crawl();
+        spider.says();
+
+        cricket.crawl();
+        cricket.says();
+        cricket.jump();
     }
 }
